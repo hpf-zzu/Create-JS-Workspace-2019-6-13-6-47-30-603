@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'n', '-f' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 warn using --force I sure hope you know what you are doing.
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readGlobalPackageData
+8 silly fetchPackageMetaData n
+9 silly fetchNamedPackageData n
+10 silly mapToRegistry name n
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/n
+14 verbose request uri https://registry.npmjs.org/n
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 下午5:34:42
+17 verbose request id 362f50c97352dd23
+18 verbose etag W/"e0373f6d9ecb846ce7830cd94f2a15d9"
+19 verbose lastModified Tue, 20 Aug 2019 08:52:15 GMT
+20 http request GET https://registry.npmjs.org/n
+21 http 304 https://registry.npmjs.org/n
+22 verbose headers { date: 'Tue, 20 Aug 2019 09:34:44 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=d632136608f33d92ace121ebc3a5472561566293684; expires=Wed, 19-Aug-20 09:34:44 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'cf-ray': '50935f863f76a300-HKG',
+22 verbose headers   age: '2216',
+22 verbose headers   etag: '"e0373f6d9ecb846ce7830cd94f2a15d9"',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'last-modified': 'Tue, 20 Aug 2019 08:52:15 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   'x-amz-meta-rev': '380-c360f7e61d31db42be964b2502e03d6b',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Tue, 20 Aug 2019 09:34:44 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=d632136608f33d92ace121ebc3a5472561566293684; expires=Wed, 19-Aug-20 09:34:44 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'cf-ray': '50935f863f76a300-HKG',
+23 silly get     age: '2216',
+23 silly get     etag: '"e0373f6d9ecb846ce7830cd94f2a15d9"',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'last-modified': 'Tue, 20 Aug 2019 08:52:15 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     'x-amz-meta-rev': '380-c360f7e61d31db42be964b2502e03d6b',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/n from cache
+25 verbose get saving n to /home/hpf/.npm/registry.npmjs.org/n/.cache.json
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule n@6.0.1 checking installable status
+39 silly cache add args [ 'n', null ]
+40 verbose cache add spec n
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'n',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'n',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed n@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for n
+44 info addNameTag [ 'n', 'latest' ]
+45 silly mapToRegistry name n
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry uri https://registry.npmjs.org/n
+49 verbose addNameTag registry:https://registry.npmjs.org/n not in flight; fetching
+50 verbose get https://registry.npmjs.org/n not expired, no request
+51 silly addNameTag next cb for n with tag latest
+52 silly addNamed n@6.0.1
+53 verbose addNamed "6.0.1" is a plain semver version for n
+54 silly mapToRegistry name n
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry uri https://registry.npmjs.org/n
+58 verbose addRemoteTarball https://registry.npmjs.org/n/-/n-6.0.1.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/n/-/n-6.0.1.tgz',
+59 verbose addRemoteTarball   'c6bf458061c09f4acef2e86221245b5c6d887d91' ]
+60 info retry fetch attempt 1 at 下午5:34:44
+61 info attempt registry request try #1 at 下午5:34:44
+62 http fetch GET https://registry.npmjs.org/n/-/n-6.0.1.tgz
+63 http fetch 200 https://registry.npmjs.org/n/-/n-6.0.1.tgz
+64 silly fetchAndShaCheck shasum c6bf458061c09f4acef2e86221245b5c6d887d91
+65 verbose addTmpTarball /tmp/npm-29384-7599379d/registry.npmjs.org/n/-/n-6.0.1.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for n@6.0.1
+67 silly cache afterAdd n@6.0.1
+68 verbose afterAdd /home/hpf/.npm/n/6.0.1/package/package.json not in flight; writing
+69 verbose afterAdd /home/hpf/.npm/n/6.0.1/package/package.json written
+70 silly loadAllDepsIntoIdealTree Finishing
+71 silly idealTree:prePrune lib
+71 silly idealTree:prePrune └── n@6.0.1
+72 silly loadIdealTree Finishing
+73 silly currentTree lib
+74 silly idealTree lib
+74 silly idealTree └── n@6.0.1
+75 silly generateActionsToTake Starting
+76 silly install generateActionsToTake
+77 warn checkPermissions Missing write access to /usr/local/lib
+78 silly generateActionsToTake Finishing
+79 silly diffTrees action count 1
+80 silly diffTrees add n@6.0.1
+81 silly decomposeActions action count 8
+82 silly decomposeActions fetch n@6.0.1
+83 silly decomposeActions extract n@6.0.1
+84 silly decomposeActions test n@6.0.1
+85 silly decomposeActions preinstall n@6.0.1
+86 silly decomposeActions build n@6.0.1
+87 silly decomposeActions install n@6.0.1
+88 silly decomposeActions postinstall n@6.0.1
+89 silly decomposeActions finalize n@6.0.1
+90 silly executeActions Starting
+91 silly install executeActions
+92 silly doSerial global-install 0
+93 silly doParallel fetch 1
+94 verbose makeDirectory /home/hpf/.npm/_locks creation not in flight; initializing
+95 silly makeDirectory /home/hpf/.npm/_locks uid: 1000 gid: 1000
+96 verbose lock using /home/hpf/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+97 verbose unlock done using /home/hpf/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+98 silly rollbackFailedOptional Starting
+99 silly rollbackFailedOptional Finishing
+100 silly runTopLevelLifecycles Starting
+101 silly runTopLevelLifecycles Finishing
+102 silly install printInstalled
+103 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+103 verbose stack     at Error (native)
+104 verbose cwd /home/hpf/js-workspace
+105 error Linux 4.15.0-54-generic
+106 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "n" "-f"
+107 error node v4.2.6
+108 error npm  v3.5.2
+109 error path /usr/local/lib/node_modules
+110 error code EACCES
+111 error errno -13
+112 error syscall mkdir
+113 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+113 error     at Error (native)
+113 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules']
+113 error   errno: -13,
+113 error   code: 'EACCES',
+113 error   syscall: 'mkdir',
+113 error   path: '/usr/local/lib/node_modules' }
+114 error Please try running this command again as root/Administrator.
+115 verbose exit [ -13, true ]
